@@ -1,0 +1,36 @@
+{
+  "product_name": "PE-Tab2Conv",
+  "interface": "Preeclampsia Risk Prioritization Prototype",
+  "active_engine": "baseline_original_tabular_extended_XGBoost.joblib",
+  "representation": "Original tabular",
+  "predictor_set": "Extended",
+  "raw_predictor_count": 9,
+  "encoded_feature_count": 21,
+  "primary_threshold": 0.5,
+  "development_cohort": "RS Adhyatma 2021-2022",
+  "locked_temporal_validation": "RS Adhyatma 2023",
+  "model_family": "XGBoost",
+  "training_software": {
+    "python": "3.10.6",
+    "scikit_learn": "1.2.0",
+    "xgboost": "1.7.5"
+  },
+  "temporal_validation_metrics": {
+    "AUROC": 0.881,
+    "AUPRC": 0.761,
+    "Brier_score": 0.036,
+    "sensitivity_at_0_50": 0.587,
+    "specificity_at_0_50": 0.9959,
+    "PPV_at_0_50": 0.931,
+    "NPV_at_0_50": 0.9622,
+    "F1_at_0_50": 0.72
+  },
+  "intended_use": "Research simulation of preeclampsia risk prioritization using routine maternal hospital data.",
+  "not_for": [
+    "Clinical diagnosis",
+    "Treatment decisions",
+    "Automated patient management",
+    "Communication of validated absolute individual risk"
+  ],
+  "calibration_note": "Temporal validation showed cohort-level underprediction; recalibration is required before clinical use."
+}

@@ -1,0 +1,21 @@
+{
+  "nama_model": "TF-IDF + Multinomial Naive Bayes",
+  "sumber_dataset": "Dataset_Sentimen_Emosi.csv",
+  "fitur_input": "Tweet (string)",
+  "target": "Sentimen (-1, 0, 1)",
+  "jumlah_train": 672,
+  "jumlah_test": 224,
+  "label_kelas": [
+    -1,
+    0,
+    1
+  ],
+  "hiperparameter_cv": {
+    "model__alpha": "0.5",
+    "tfidf__min_df": "2",
+    "tfidf__ngram_range": "(1, 1)"
+  },
+  "macro_f1_cv": 0.4906885468033016,
+  "macro_f1_test": 0.5614026725137836,
+  "catatan": "Model edukasi; domain terbatas; bukan sistem penilaian individu."
+}

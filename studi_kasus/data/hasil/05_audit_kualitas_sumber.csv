@@ -1,0 +1,14 @@
+kolom,dtype_asli,jumlah_missing,missing_persen,unique_non_null
+NO,int64,0,0.0,561
+NAMA,object,0,0.0,561
+USIA,object,3,0.53,72
+PARITAS,int64,0,0.0,7
+JARAK KELAHIRAN,object,7,1.25,4
+RIW HIPERTENSI,object,0,0.0,2
+RIW PE,object,0,0.0,11
+OBESITAS,object,0,0.0,2
+RIW DM,object,0,0.0,2
+RIW HIPERTENSI/PE DALAM KELUARGA,object,0,0.0,2
+SOSEK RENDAH,object,0,0.0,2
+PE/Non PE,object,0,0.0,7
+Unnamed: 12,object,550,98.04,8

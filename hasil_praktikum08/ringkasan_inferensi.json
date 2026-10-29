@@ -1,0 +1,21 @@
+{
+  "module": "Praktikum 08 — Inferensi dan Streamlit",
+  "source_model": "Praktikum 06 — model terpilih via CV train",
+  "model_type": "Pipeline(ColumnTransformer, DecisionTreeClassifier)",
+  "sha256_model": "90c198ba9d5a8a0a23c2c67d7f3d02d64f3801bb25f63549db36379f9e0e16ad",
+  "sklearn_version": "1.7.1",
+  "n_example_records": 3,
+  "feature_names": [
+    "USIA",
+    "PARITAS",
+    "JARAK KELAHIRAN",
+    "RIW HIPERTENSI",
+    "OBESITAS",
+    "RIW DM",
+    "RIW HIPERTENSI/PE DALAM KELUARGA",
+    "SOSEK RENDAH"
+  ],
+  "test_cases": 7,
+  "test_cases_passed": 7,
+  "intended_use": "Pendidikan saja; tidak untuk penggunaan klinis"
+}

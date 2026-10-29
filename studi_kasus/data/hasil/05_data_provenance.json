@@ -1,0 +1,33 @@
+{
+  "sumber": "dataKasus-1.xlsx",
+  "sheet": "2022",
+  "rows": 561,
+  "features": [
+    "USIA",
+    "PARITAS",
+    "JARAK KELAHIRAN",
+    "RIW HIPERTENSI",
+    "OBESITAS",
+    "RIW DM",
+    "RIW HIPERTENSI/PE DALAM KELUARGA",
+    "SOSEK RENDAH"
+  ],
+  "target_counts": {
+    "non_pe": 520,
+    "kelompok_pe": 41
+  },
+  "cleaning_rules": [
+    "Trim whitespace string",
+    "Empty string -> missing",
+    "USIA: first digit sequence -> float",
+    "PARITAS -> numeric",
+    "Explicit target mapping",
+    "Exclude identifiers, free text, and RIW PE from X"
+  ],
+  "limitations": [
+    "Patient-level independence unverified",
+    "Temporal availability of variables unverified",
+    "Clinical endpoint mapping requires validation",
+    "No statistical imputation in Modul 05"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "module": "Praktikum 06 — Pipeline dan Evaluasi PE",
+  "data_source": "data_bersih.csv dari Praktikum 05",
+  "total_records": 561,
+  "train_records": 420,
+  "test_records": 141,
+  "class_train": {
+    "0": 389,
+    "1": 31
+  },
+  "class_test": {
+    "0": 131,
+    "1": 10
+  },
+  "features": [
+    "USIA",
+    "PARITAS",
+    "JARAK KELAHIRAN",
+    "RIW HIPERTENSI",
+    "OBESITAS",
+    "RIW DM",
+    "RIW HIPERTENSI/PE DALAM KELUARGA",
+    "SOSEK RENDAH"
+  ],
+  "positive_label": 1,
+  "split": {
+    "test_size": 0.25,
+    "stratify": true,
+    "random_state": 42
+  },
+  "cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "scoring_for_selection": "f1_PE"
+  },
+  "best_cv_f1_PE": 0.45353535353535357,
+  "best_params": {
+    "classifier__class_weight": "balanced",
+    "classifier__max_depth": 2,
+    "classifier__min_samples_leaf": 5
+  },
+  "test_metrics": {
+    "baseline": {
+      "accuracy": 0.9290780141843972,
+      "balanced_accuracy": 0.5,
+      "precision_PE": 0.0,
+      "recall_PE": 0.0,
+      "f1_PE": 0.0,
+      "specificity": 1.0,
+      "TN": 131,
+      "FP": 0,
+      "FN": 10,
+      "TP": 0
+    },
+    "fixed": {
+      "accuracy": 0.8226950354609929,
+      "balanced_accuracy": 0.7660305343511451,
+      "precision_PE": 0.2413793103448276,
+      "recall_PE": 0.7,
+      "f1_PE": 0.358974358974359,
+      "specificity": 0.8320610687022901,
+      "TN": 109,
+      "FP": 22,
+      "FN": 3,
+      "TP": 7
+    },
+    "selected": {
+      "accuracy": 0.9219858156028369,
+      "balanced_accuracy": 0.8194656488549619,
+      "precision_PE": 0.4666666666666667,
+      "recall_PE": 0.7,
+      "f1_PE": 0.56,
+      "specificity": 0.9389312977099237,
+      "TN": 123,
+      "FP": 8,
+      "FN": 3,
+      "TP": 7
+    }
+  },
+  "library_versions": {
+    "python": "3.10.18",
+    "scikit_learn": "1.7.1",
+    "pandas": "2.3.1"
+  },
+  "limitations": [
+    "Row-level split; patient-level independence not verified",
+    "Predictor timing and outcome definitions not clinically audited",
+    "Small number of positive cases; no external validation",
+    "Predicted scores are not calibrated clinical risk",
+    "Educational use only; not for diagnosis or clinical decisions"
+  ]
+}

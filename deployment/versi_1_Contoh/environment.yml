@@ -1,0 +1,14 @@
+name: petab2conv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - libomp
+  - pip:
+      - streamlit==1.38.0
+      - numpy==1.24.4
+      - pandas==1.5.3
+      - scikit-learn==1.2.0
+      - xgboost==1.7.5
+      - joblib==1.2.0

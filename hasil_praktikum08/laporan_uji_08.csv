@@ -1,0 +1,8 @@
+uji,ekspektasi,hasil,sesuai,detail
+input_valid,PASS,PASS,True,Input diterima dan dapat diprediksi
+kolom_hilang,REJECT,REJECT,True,Kontrak kolom tidak sesuai. Kurang: ['OBESITAS']; tambahan: []
+kategori_asing,REJECT,REJECT,True,OBESITAS: kategori belum dikenal: ['Mungkin']
+angka_teks_salah,REJECT,REJECT,True,USIA: ada nilai bukan numerik pada baris [0]
+usia_tak_wajar_dibanding_data_latihan,REJECT,REJECT,True,"USIA: di luar rentang data pembelajaran [13, 43]"
+nilai_kosong_usia_boleh_dengan_imputer,PASS,PASS,True,Input diterima dan dapat diprediksi
+nilai_kosong_kategori_boleh_dengan_imputer,PASS,PASS,True,Input diterima dan dapat diprediksi

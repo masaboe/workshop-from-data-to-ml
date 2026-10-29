@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+
+# Rahasia dan konfigurasi lokal
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml

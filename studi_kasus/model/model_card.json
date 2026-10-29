@@ -1,0 +1,89 @@
+{
+  "title": "Decision Tree untuk demonstrasi klasifikasi label PE",
+  "module": "Praktikum 07 — Ekspor Model dan Hasil",
+  "origin_module": "Praktikum 06 — model terpilih via CV train",
+  "purpose": "Pendidikan dan demonstrasi pipeline; tidak untuk keputusan klinis",
+  "model_type": "Pipeline(ColumnTransformer, DecisionTreeClassifier)",
+  "model_filename": "pe_workshop_pipeline.joblib",
+  "sklearn_version": "1.7.1",
+  "python_version": "3.10.18",
+  "pandas_version": "2.3.1",
+  "joblib_version": "1.5.1",
+  "input_features": [
+    "USIA",
+    "PARITAS",
+    "JARAK KELAHIRAN",
+    "RIW HIPERTENSI",
+    "OBESITAS",
+    "RIW DM",
+    "RIW HIPERTENSI/PE DALAM KELUARGA",
+    "SOSEK RENDAH"
+  ],
+  "features": [
+    "USIA",
+    "PARITAS",
+    "JARAK KELAHIRAN",
+    "RIW HIPERTENSI",
+    "OBESITAS",
+    "RIW DM",
+    "RIW HIPERTENSI/PE DALAM KELUARGA",
+    "SOSEK RENDAH"
+  ],
+  "excluded_features": [
+    "NO",
+    "NAMA",
+    "Unnamed: 12",
+    "RIW PE"
+  ],
+  "target": "target_PE",
+  "label_mapping": {
+    "0": "Non PE",
+    "1": "PE / kelompok PE menurut label latihan"
+  },
+  "train_records": 420,
+  "test_records": 141,
+  "n_test_positive": 10,
+  "split_config": {
+    "test_size": 0.25,
+    "stratify": true,
+    "random_state": 42
+  },
+  "cv_config": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "scoring_for_selection": "f1_PE"
+  },
+  "model_selection": "Best parameters selected in Praktikum 06 via TRAIN 5-fold CV, scoring F1 PE",
+  "hyperparameters": {
+    "classifier__class_weight": "balanced",
+    "classifier__max_depth": 2,
+    "classifier__min_samples_leaf": 5
+  },
+  "best_train_cv_f1_PE": 0.45353535353535357,
+  "test_metrics": {
+    "accuracy": 0.9219858156028369,
+    "balanced_accuracy": 0.8194656488549619,
+    "precision_PE": 0.4666666666666667,
+    "recall_PE": 0.7,
+    "f1_PE": 0.56,
+    "specificity": 0.9389312977099237,
+    "TN": 123,
+    "FP": 8,
+    "FN": 3,
+    "TP": 7
+  },
+  "predicted_score_notice": "Keluaran predict_proba belum dikalibrasi; bukan probabilitas risiko klinis",
+  "limitations": [
+    "Row-level split; patient-level independence not verified",
+    "Predictor timing and outcome definitions not clinically audited",
+    "Small number of positive cases; no external validation",
+    "Predicted scores are not calibrated clinical risk",
+    "Educational use only; not for diagnosis or clinical decisions",
+    "Data test hanya memiliki 10 baris positif",
+    "Kategori baru yang diabaikan encoder belum tentu sesuai populasi training",
+    "Model tidak divalidasi untuk pasien nyata, situs eksternal, atau perubahan waktu"
+  ],
+  "safety": "Tidak untuk diagnosis, keputusan medis, atau penggunaan klinis",
+  "source_report": "studi_kasus/hasil/laporan_praktikum06.json"
+}

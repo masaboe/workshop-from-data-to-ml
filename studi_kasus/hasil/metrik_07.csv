@@ -1,0 +1,2 @@
+model,accuracy,precision_PE,recall_PE,f1_PE,specificity,TN,FP,FN,TP
+decision_tree_cv_selected,0.9219858156028369,0.4666666666666667,0.7,0.56,0.9389312977099237,123,8,3,7

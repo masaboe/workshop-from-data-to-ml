@@ -1,0 +1,9 @@
+KNN terpilih berdasarkan CV training: k=7
+              precision    recall  f1-score   support
+
+           0     0.9375    0.9375    0.9375        64
+           1     0.8889    0.8889    0.8889        36
+
+    accuracy                         0.9200       100
+   macro avg     0.9132    0.9132    0.9132       100
+weighted avg     0.9200    0.9200    0.9200       100

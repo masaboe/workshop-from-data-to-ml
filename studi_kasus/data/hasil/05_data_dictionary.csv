@@ -1,0 +1,14 @@
+kolom,peran
+USIA,prediktor numerik
+PARITAS,prediktor numerik
+JARAK KELAHIRAN,prediktor kategorikal
+RIW HIPERTENSI,prediktor kategorikal
+OBESITAS,prediktor kategorikal
+RIW DM,prediktor kategorikal
+RIW HIPERTENSI/PE DALAM KELUARGA,prediktor kategorikal
+SOSEK RENDAH,prediktor kategorikal
+PE/Non PE,target asli
+RIW PE,audit saja — tidak dipakai sebagai prediktor
+NO,identifier — dikecualikan
+NAMA,identifier — dikecualikan
+Unnamed: 12,catatan — dikecualikan

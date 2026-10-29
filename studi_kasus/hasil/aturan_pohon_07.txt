@@ -1,0 +1,10 @@
+|--- cat__RIW HIPERTENSI_Ya <= 0.50
+|   |--- cat__RIW HIPERTENSI/PE DALAM KELUARGA_Ada <= 0.50
+|   |   |--- class: 0
+|   |--- cat__RIW HIPERTENSI/PE DALAM KELUARGA_Ada >  0.50
+|   |   |--- class: 1
+|--- cat__RIW HIPERTENSI_Ya >  0.50
+|   |--- num__USIA <= 35.50
+|   |   |--- class: 1
+|   |--- num__USIA >  35.50
+|   |   |--- class: 0

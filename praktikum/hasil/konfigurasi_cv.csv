@@ -1,0 +1,2 @@
+model__alpha,tfidf__min_df,tfidf__ngram_range,macro_F1_cv,jumlah_kombinasi
+0.5,2,"(1, 1)",0.4906885468033016,12

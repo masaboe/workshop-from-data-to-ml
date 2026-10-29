@@ -1,0 +1,33 @@
+{
+  "sumber_sheet": "2022",
+  "jumlah_baris": 561,
+  "jumlah_kolom_sumber": 13,
+  "features": [
+    "USIA",
+    "PARITAS",
+    "JARAK KELAHIRAN",
+    "RIW HIPERTENSI",
+    "OBESITAS",
+    "RIW DM",
+    "RIW HIPERTENSI/PE DALAM KELUARGA",
+    "SOSEK RENDAH"
+  ],
+  "kelas_biner": {
+    "Non PE": 520,
+    "Kelompok PE": 41
+  },
+  "missing_features": {
+    "USIA": 3,
+    "PARITAS": 0,
+    "JARAK KELAHIRAN": 7,
+    "RIW HIPERTENSI": 0,
+    "OBESITAS": 0,
+    "RIW DM": 0,
+    "RIW HIPERTENSI/PE DALAM KELUARGA": 0,
+    "SOSEK RENDAH": 0
+  },
+  "jumlah_profil_fitur_identik_bukan_pasien_duplikat": 380,
+  "imputasi_dilakukan": false,
+  "baris_dihapus": 0,
+  "batasan": "Independensi pasien, kronologi pengukuran, definisi target dan validitas klinis belum terverifikasi."
+}
