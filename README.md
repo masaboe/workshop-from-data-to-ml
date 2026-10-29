@@ -20,7 +20,7 @@ Repositori ini berisi **9 notebook praktikum berurutan**, dataset contoh, buku a
 | 08 | Inferensi dan Streamlit | Muat model dari 07, prediksi, validasi input, aplikasi web | `deployment/Notebook_08/08_Inferensi_dan_Streamlit_Modul.ipynb` |
 | 09 | Pengayaan klasifikasi teks | TF-IDF + Multinomial Naive Bayes, evaluasi | `praktikum/notebooks/09_Pengayaan_Klasifikasi_Teks_Modul.ipynb` |
 
-**Alur wajib:** 01 → 02 → 03 → 04 → **05 → 06 → 07 → 08**. Notebook 09 merupakan pengayaan setelah memahami TF-IDF (02) dan klasifikasi (04). Buku ajar: [`Modul_From_Data_to_Machine_Learning_Buku_Ajar_Lengkap.docx`](Modul_From_Data_to_Machine_Learning_Buku_Ajar_Lengkap.docx).
+**Alur wajib:** 01 → 02 → 03 → 04 → **05 → 06 → 07 → 08**. Notebook 09 merupakan pengayaan setelah memahami TF-IDF (02) dan klasifikasi (04). Buku ajar: [`Modul_Workshop_FromDataToML.pdf`](Modul_Workshop_FromDataToML.pdf).
 
 ## 2. Instalasi sekali pada folder utama
 
