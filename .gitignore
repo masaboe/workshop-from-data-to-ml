@@ -17,3 +17,9 @@ Thumbs.db
 .env.*
 !.env.example
 .streamlit/secrets.toml
+
+# Object file
+*.o
+
+# Ada Library Information
+*.ali
